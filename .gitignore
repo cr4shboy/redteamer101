@@ -1,0 +1,41 @@
+# Local tooling binaries (provisioned separately / inside a container in future)
+.tools/
+
+# Target-specific recon/scan evidence — never published.
+# Anchored to repo root so it does NOT catch src/red_teaming/projects/ (code).
+/projects/
+
+# Operational ledger (work-package history, target records) — PRIVATE repo only.
+# Public repo keeps only the neutral operating rules in AGENTS.md.
+ledger/
+CURRENT_TASK.md
+CURRENT_TASK.*.draft.md
+
+# Dependencies / libraries
+node_modules/
+.opencode/node_modules/
+
+# Python caches / build
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Secrets / local environment — never published
+.env
+*.env
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.*
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

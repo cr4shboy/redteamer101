@@ -1,0 +1,8 @@
+{
+  "capability": "telegram_handoff_test3",
+  "objective": "Create a local-only capability named telegram_handoff_test3.",
+  "requirements": [
+    "When run, output exactly TELEGRAM_HANDOFF_OK_3.",
+    "Exit with code 0."
+  ]
+}

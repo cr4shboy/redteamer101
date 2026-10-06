@@ -1,0 +1,39 @@
+# CAPABILITY-001 minimal capability registry (local-only, domain-neutral).
+# Source of truth for `python capability.py <name>`.
+# Each entry has exactly: type, status, path, description.
+# status is one of: available, missing.
+asset_discovery:
+  type: skill
+  status: missing
+  path: skills/asset_discovery
+  description: Local asset-discovery skill for enumerating approved in-scope assets.
+zap_spider:
+  type: skill
+  status: missing
+  path: skills/zap_spider
+  description: OWASP ZAP spider skill (not installed).
+fingerprint_web_server:
+  type: skill
+  status: missing
+  path: skills/fingerprint_web_server
+  description: Bounded active web-server fingerprint runner (not wired).
+nuclei_scan:
+  type: skill
+  status: missing
+  path: skills/nuclei_scan
+  description: Nuclei vulnerability-scanning skill (not installed).
+handoff_smoke_test:
+  type: skill
+  status: available
+  path: skills/handoff_smoke_test
+  description: Temporary local-only CAPABILITY-006 acceptance validation skill; prints a fixed token.
+telegram_handoff_test2:
+  type: skill
+  status: available
+  path: skills/telegram_handoff_test2
+  description: Local-only synthetic handoff test; prints the fixed success token TELEGRAM_HANDOFF_TEST2_OK.
+telegram_handoff_test3:
+  type: skill
+  status: available
+  path: skills/telegram_handoff_test3
+  description: Local-only synthetic handoff test; prints the fixed success token TELEGRAM_HANDOFF_OK_3.
